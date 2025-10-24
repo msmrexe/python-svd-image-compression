@@ -1,4 +1,4 @@
-# Python SVD Image Compression
+# SVD Image Compressor
 
 This project demonstrates image compression using Singular Value Decomposition (SVD) in Python and was developed for a Matrix Computations course. It implements a "from scratch" SVD algorithm based on the **Power Iteration** method and compares its results (speed, compression ratio, image quality) against NumPy's highly optimized `linalg.svd` implementation.
 
@@ -21,7 +21,7 @@ The tool can compress both grayscale and color images from local files or URLs.
 ## Project Structure
 
 ```
-python-svd-image-compression/
+python-svd-image-compressor/
 ├── .gitignore
 ├── LICENSE
 ├── README.md              # This documentation
