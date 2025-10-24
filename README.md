@@ -56,9 +56,9 @@ An image can be represented as a matrix (or multiple matrices for color channels
 1.  **Decomposition:** Apply SVD to the image matrix $A$.
 2.  **Truncation (Low-Rank Approximation):** Keep only the largest $k$ singular values in $\Sigma$ and the corresponding first $k$ columns of $U$ and first $k$ rows of $V^T$. Let these be $U_k$, $\Sigma_k$, and $V^T_k$.
 3.  **Reconstruction:** Reconstruct an approximate image matrix $A_k$:
-    ```math
+    \[
     A_k = U_k \Sigma_k V^T_k
-    ```
+    \]
     This $A_k$ is the closest rank-$k$ approximation of the original image $A$.
 4.  **Storage:** Instead of storing the original $n \times m$ pixels, we store the much smaller matrices $U_k$ ($n \times k$), the $k$ singular values (vector $s_k$), and $V^T_k$ ($k \times m$). The total number of values stored is $(n \times k) + k + (k \times m)$, which is significantly less than $n \times m$ when $k$ is small.
 
